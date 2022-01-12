@@ -7,8 +7,9 @@ import random
 def bot():
     print("++++ Created by 'Kim_sehyun_34' :) ++++")
     print()
-    insta_id = ['kim_sehyun_34']
-    insta_pw = ['Do040304*']
+    insta_id = int(input('인스타id : '))
+    insta_pw = int(input('인스타pw : '))
+    insta_tag = input('작업태그 : ')
     insta_cnt = int(input('작업횟수(숫자) : '))
 
     #C-DV
@@ -52,7 +53,7 @@ def bot():
     time.sleep(6)
 
     #작업할 해시태그 검색 결과 페이지로 이동
-    driver.get('https://www.instagram.com/explore/tags/풍경/')
+    driver.get('https://www.instagram.com/explore/tags/{}/'.format(insta_tag))
     time.sleep(5)
 
     #게시물 첫번째 피드 선택
