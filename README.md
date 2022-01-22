@@ -8,6 +8,6 @@ Ksh python repository
 ----
 v1.0 ChromeDriver 96.0.4664.45 버전 기본 업로드.
 
-v1.1 ChromeDriver 97.0.4692.71 버전 업데이트, 다음피드 오류코드 수정. 
+v1.1 ChromeDriver 97.0.4692.71 버전 업데이트, 다음피드 오류코드 수정. {처음작동시 오류발생}
 /html/body/div[6]/div[1]/div/div/div[2] -> /html/body/div[6]/div[2]/div/div[2]
 
