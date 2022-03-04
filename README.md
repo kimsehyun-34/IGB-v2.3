@@ -3,7 +3,7 @@
 1. chromedriver.exe 업데이트 (https://chromedriver.chromium.org/downloads)
 2. IGB-v2.0.py 실행
 ----
-# v2.0 인기피드 또는 최신피드 선택가능 & 사용자 편의긴능 추가
+# v2.0 인기피드 또는 최신피드 선택가능 & 사용자 편의기능 추가
 
 v1.1 ChromeDriver 97.0.4692.71 버전 업데이트, 다음피드 오류코드 수정. {처음작동시 오류발생}
 /html/body/div[6]/div[1]/div/div/div[2] -> /html/body/div[6]/div[2]/div/div[2]
