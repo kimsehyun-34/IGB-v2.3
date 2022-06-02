@@ -4,7 +4,9 @@
 2. IGB-v2.1.py 실행
 ----
 # --- 6/2부터 작동X ---
+- 인스타의 크롬 Xpath 암호화.
 
+----
  V2.1 로그인 이후 정보 확인 메시지 종료 기능 추가, 크롬드라이버 업데이트, 코드 수정 (다음피드 XPath)
 /html/body/div[6]/div[2]/div/div -> /html/body/div[6]/div[2]/div/div[2]
 
