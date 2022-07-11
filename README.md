@@ -1,5 +1,5 @@
 # FURY.312
-# 앙용하지 마세용 학습용으로 만든겁니다~ 잘못쓰면 인스타 밴먹어용~
+# 용하지 마세용 학습용으로 만든겁니다~ 잘못쓰면 인스타 밴먹어용~
 1. chromedriver.exe 업데이트 (https://chromedriver.chromium.org/downloads)
 2. IGB-v2.1.py 실행
 ----
