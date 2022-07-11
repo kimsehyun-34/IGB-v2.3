@@ -5,6 +5,7 @@
 2. IGB-v2.1.py 실행
 ----
 - xpath 활용.
+- Chromedriver 사용함. (예제참고)
 - py selenium 활용.
 ----
 # V2.2
