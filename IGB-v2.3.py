@@ -94,6 +94,6 @@ def bot():
     driver.quit()
 
 bot()
-
+os.system('pause')
 
     
