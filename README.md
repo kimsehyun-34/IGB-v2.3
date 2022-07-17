@@ -11,7 +11,7 @@
 - py selenium 활용.
 ----
 # V2.2
-- 피드선택 xpath 변경, 편의기능 
+- 피드선택 xpath 변경, 편의기능 추가.
  1. 최근피드 : (//*[@id="react-root"]/div/div/section/main/article/div[2]/div/div[1]/div[1]/a/div/div[2]) -> ('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[2]/div/div[1]/div[1]/a/div[1]/div[2]')
 
  2. 인기피드 : ('//*[@id="react-root"]/div/div/section/main/article/div[1]/div/div/div[1]/div[1]/a/div[1]') -> ('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]')
