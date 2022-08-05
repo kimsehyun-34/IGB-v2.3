@@ -1,6 +1,7 @@
-# FURY.312
+# 업데이트 중지
+--------
 # 악용하지 마세용 학습용으로 만든 겁니다
-# 잘못쓰면 인스타 밴 먹을 수도 있어요 ;)
+- 잘못쓰면 인스타 밴 먹을 수도 있어요 ;)
 
 ----
 1. chromedriver.exe 업데이트 (https://chromedriver.chromium.org/downloads)
