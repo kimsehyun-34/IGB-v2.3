@@ -37,7 +37,7 @@ def bot():
     print('로그인중....')
     time.sleep(5)
 
-    #아이디
+    #id
 
     id_input = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label')
     id_input.click()
