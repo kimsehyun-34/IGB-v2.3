@@ -6,6 +6,10 @@ import random
 
 def bot():
     print("++++ Created by 'Kim_sehyun_34' :) ++++")
+    time.sleep(0.5)
+    print()
+    print("과도한 사용은 비추천 드립니다.")
+    time.sleep(0.5)
     print()
     id = input('인스타id : ')
     pw = input('인스타pw : ')
@@ -37,7 +41,7 @@ def bot():
     print('로그인중....')
     time.sleep(5)
 
-    #id
+    #아이디
 
     id_input = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label')
     id_input.click()
@@ -48,32 +52,30 @@ def bot():
     pw_input = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label')
     pw_input.click()
     pw_input.send_keys(pw)
-    time.sleep(1)
+    time.sleep(random.uniform(1,3))
 
     #로그인 버튼
 
     login_btn = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button')
     login_btn.click()
 
-    time.sleep(4)
+    time.sleep(5)
 
-    #확인버튼
-    oa_btn = driver.find_element_by_xpath('//*[@id="react-root"]/div/div/section/main/div/div/div/section/div/button')
-    oa_btn.click()
-    time.sleep(3)
 
     #이동
+    time.sleep(random.uniform(2,3))
     driver.get('https://www.instagram.com/explore/tags/{}/'.format(tag))
     time.sleep(5)
 
     #최근피드 선택
     if ff==1:
-        first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[2]/div/div[1]/div[1]/a/div[1]/div[2]')
-        first_feed.click()
-        time.sleep(2)
+        print("인스타 업데이트로 인하여 컴퓨터 버전은 최신피드가 보이지 않네요..")
+        #first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[2]/div/div[1]/div[1]/a/div[1]/div[2]')
+        #first_feed.click()
+        #time.sleep(2)
     #인기피드 선택
     if ff==0:
-        first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]')
+        first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div/div/div/div[1]/div[1]/a/div[1]/div[2]')
         first_feed.click()
         time.sleep(2)
 
@@ -84,16 +86,14 @@ def bot():
         time.sleep(1+random.random())
         xpath2 = "//a"
         el_list2 = driver.find_elements_by_xpath(xpath2)
-        time.sleep(1)
+        time.sleep(random.uniform(1,2))
         #다음
-        nextFeed = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[1]/div/div/div[2]')
+        nextFeed = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[1]/div/div/div/button')
         nextFeed.click()
-        time.sleep(2+random.random()) 
+        time.sleep(random.uniform(3,4))
     print('===========모든 작업 완료==============')
     time.sleep(2)
     driver.quit()
 
 bot()
 os.system('pause')
-
-    
