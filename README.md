@@ -5,7 +5,7 @@
 
 ----
 1. chromedriver.exe 업데이트 (https://chromedriver.chromium.org/downloads)
-2. IGB-v2.1.py 실행
+2. IGB-v2.3.py 실행
 ----
 - xpath 활용.
 - Chromedriver 사용함. (예제참고)
