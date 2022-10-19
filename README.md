@@ -11,7 +11,12 @@
 - Chromedriver 사용함. (예제참고)
 - py selenium 활용.
 ----
-# V2.2
+# V2.3 (블로그 리뷰로 인하여 업데이트.)
+ 1. 최근피드 기능 삭제. (최신피드 사라짐)
+ 
+ 2. 인기피드 : ('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]') -> ('/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div/div/div/div[1]/div[1]/a/div[1]/div[2]')
+----
+V2.2
 - 피드선택 xpath 변경, 편의기능 추가.
  1. 최근피드 : (//*[@id="react-root"]/div/div/section/main/article/div[2]/div/div[1]/div[1]/a/div/div[2]) -> ('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[2]/div/div[1]/div[1]/a/div[1]/div[2]')
 
