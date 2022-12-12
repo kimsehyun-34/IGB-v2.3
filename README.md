@@ -40,6 +40,6 @@ V1.1
 /html/body/div[6]/div[1]/div/div/div[2] -> /html/body/div[6]/div[2]/div/div[2]
 ----
 V1.0 
-- ChromeDriver 96.0.4664.45 버전 기본 업로드
+- ChromeDriver 96.0.4664.45 버전 기본 업로드.
 
 
