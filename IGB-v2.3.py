@@ -37,29 +37,26 @@ def bot():
     driver = webdriver.Chrome(driver_path, options=options)
     driver.implicitly_wait(10)
 
+    #이동
     driver.get('https://www.instagram.com/?hl=ko')
     print('로그인중....')
-    time.sleep(5)
+    time.sleep(3)
 
     #아이디
-
-    id_input = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label')
+    id_input = driver.find_element("xpath", '//*[@id="loginForm"]/div/div[1]/div/label')
     id_input.click()
-    id_input.send_keys(id)
+    id_input.send_keys(insta_id) #아이디 입력
 
-    #PW
-
-    pw_input = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label')
+    #패스워드
+    pw_input = driver.find_element("xpath", '//*[@id="loginForm"]/div/div[2]/div/label')
     pw_input.click()
-    pw_input.send_keys(pw)
+    pw_input.send_keys(insta_pw)
     time.sleep(random.uniform(1,3))
 
-    #로그인 버튼
-
-    login_btn = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button')
+    #로그인 버튼 클릭
+    login_btn = driver.find_element("xpath", '//*[@id="loginForm"]/div/div[3]/button')
     login_btn.click()
-
-    time.sleep(5)
+    time.sleep(10)
 
 
     #이동
@@ -68,31 +65,27 @@ def bot():
     time.sleep(5)
 
     #최근피드 선택
+    #게시물 첫번째 피드 선택
     if ff==1:
-        print("인스타 업데이트로 인하여 컴퓨터 버전은 최신피드가 보이지 않네요..")
-        #first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/article/div[2]/div/div[1]/div[1]/a/div[1]/div[2]')
-        #first_feed.click()
-        #time.sleep(2)
-    #인기피드 선택
+        first_feed = driver.find_element("xpath", '/html/body/div[2]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]')
+        first_feed.click()
+        time.sleep(2)
+    #게시물 인기 피드 선택
     if ff==0:
-        first_feed = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div/div/div/div[1]/div[1]/a/div[1]/div[2]')
+        first_feed = driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/section/main/article/div/div/div/div[1]/div[1]/a/div[1]/div[2]')
         first_feed.click()
         time.sleep(2)
 
-    for idx in range(cnt):
-        xpath = "//article//section/span/button"
-        el_list = driver.find_elements_by_xpath(xpath)
-        el_list[0].click()
-        time.sleep(1+random.random())
-        xpath2 = "//a"
-        el_list2 = driver.find_elements_by_xpath(xpath2)
+    #좋아요 작업 - 입력한 횟수만큼 반복 작업
+    for idx in range(insta_cnt):
+        el_list = driver.find_element("xpath", '/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[3]/div/div/section[1]/span[1]/button')
+        el_list.click()
         time.sleep(random.uniform(1,2))
-        #다음
-        nextFeed = driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[1]/div/div/div/button')
+        #다음피드
+        nextFeed = driver.find_element("xpath",'/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[1]/div/div/div/button')
         nextFeed.click()
         time.sleep(random.uniform(3,4))
-    print('===========모든 작업 완료==============')
-    time.sleep(2)
+    print('모든 작업 완료')
     driver.quit()
 
 bot()
